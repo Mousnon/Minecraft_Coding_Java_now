@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "mccourse",
+  "version": "${version}",
+
+  "name": "Green Update",
+  "description": "Minecraft but there are green tools and ores!",
+  "authors": [
+    "MusaMaster"
+  ],
+  "contact": {
+    "homepage": "https://musamaster.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.musa.musacode.MCCourseMod"
+    ]
+  },
+  "mixins": [
+    "mccourse.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests":{
+    "another-mod": "*"
+  }
+}
+
